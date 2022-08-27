@@ -230,6 +230,7 @@ textarea {
 }
 
 body {
+  visibility: hidden;
   margin: 0;
   font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
@@ -629,8 +630,8 @@ a:focus {
 }
 
 .container-fluid {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 160px;
+  padding-left: 160px;
   *zoom: 1;
 }
 
