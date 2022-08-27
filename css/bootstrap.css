@@ -630,8 +630,9 @@ a:focus {
 }
 
 .container-fluid {
-  padding-right: 160px;
-  padding-left: 160px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
   *zoom: 1;
 }
 
