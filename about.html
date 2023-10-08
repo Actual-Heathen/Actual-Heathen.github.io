@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Epic Site</title>
+    <title>About Me :)</title>
     <meta content="Epic Website" property="og:title" />
     <meta content="My Personal Site" property="og:description" />
     <meta content="https://actual-heathen.github.io/" property="og:url" />
@@ -9,34 +9,139 @@
     <meta content="#000084" data-react-helmet="true" name="theme-color" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link rel="icon" href="assets/icon.jpg">
+    <style>body { visibility: hidden }</style>
+    <noscript>
+      <style>
+        body { 
+           visibility: visible; 
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <div class="navbar navbar-inverse">
       <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          </button>
-          <a class="brand" href="./index.html">Epic Site</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="">
-                <a href="./about.html">About</a>
-              </li>
+        <a class="brand" href="./index.html">Epic Site</a>
+        <ul class="nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div> 
+    <div class="container" style="margin-right: 35%; margin-left:auto; padding-left: 5%;">
+      <div class="row">
+        <div class="span3">
+          <ul class="nav nav-list affix-top">
+            <li class="active"><a href="#About">About</a></li>
+            <li><a href="#Interests">Interests</a></li>
+            <li><a href="#Research">Research</a></li>
+            <li><a href="#Projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="span9">
+          <section id="About">
+            <div class="page-header">
+              <h1>About Me :)</h1>
+            </div>
+            <h2>My own personal spot on the internet</h2>
+            <p>Welcome to my corner of the Internet! I plan on using this site to host a variety of things from my research to to fun personal things.</p>
+            <p>I am but a simple CS grad student with too many interests.</p>
+            <ul>
+              <li>I do quantum computing research</li>
+              <li>An avid C & C++ enjoyer</li>
+              <li>I am fluent in English and spanish and am learning French and German</li>
+              <li>I know how to play guitar and trombone</li>
+              <li>I like write music of questionable quality</li>
+              <li>Hatsune Miku fan</li>
             </ul>
-          </div>
+          </section>
+          <section id="Interests">
+            <div class="page-header">
+              <h1>Interests</h1>
+            </div>
+            <h2>Some of my interests</h2>
+            <ul>
+              <li><strong>Games</strong></li>
+              <ul>
+                <li><strong>Some of my favorite games</strong></li>
+                <ul>
+                  <li>Favorite game: Dark souls</li>
+                  <li>Super Mario Galaxy</li>
+                  <li>GregTech: New Horizons</li>
+                  <li>Beat Saber</li>
+                  <li>Boneworks</li>
+                  <li>Baba is you</li>
+                  <li>The Legend of Zelda: Breath of the Wild</li>
+                  <li>ULTRAKILL</li>
+                  <li>Hatsune Miku Project Diva: Mega Mix+</li>
+                </ul>
+                <li><strong>games I'm currently playing</strong></li>
+                <ul>
+                  <li>Dead Space</li>
+                  <li>Hardspace: Shipbreaker</li>
+                  <li>Bioshock 2</li>
+                  <li>Hi-Fi Rush</li>
+                  <li>Touhou Project 8</li>
+                </ul>
+              </ul>
+              <li><strong>Music</strong></li>
+              <ul>
+                <li><strong>Genres</strong></li>
+                <ul>
+                  <li>Rock</li>
+                  <li>Vocaloid</li>
+                  <li>Retrowave</li>
+                </ul>
+                <li><strong>Artists</strong></li>
+                <ul>
+                  <li>Muse</li>
+                  <li>Paramore</li>
+                  <li>The Strokes</li>
+                  <li>Daft Punk</li>
+                  <li>Mitchie M</li>
+                </ul>
+              </ul>
+              <li><strong>Movies</strong></li>
+              <ul>
+                <li>Star Wars original trilogy</li>
+                <li>The Grand Budapest Hotel</li>
+                <li>Evil Dead trilogy</li>
+              </ul>
+            </ul>
+          </section>
+          <section id="Research">
+            <div class="page-header">
+              <h1>Research</h1>
+            </div>
+            <h2>My research areas and publications</h2>
+            <p>MY research is currently focused on quantum computing. As of now I do not have any publications of available work in this area :(</p>
+            <h2>Dusty Plasma</h2>
+            <p>Want to learn about dusty plasmas in outer space?</p>
+            <div class="btn-group">
+              <a href="assets/Numerical_Simulations_of_Dust_Particles_in_an_Ambient_Magnetic_Field.pdf" class="btn">Report</a>
+              <a href="https://agu2022fallmeeting-agu.ipostersessions.com/Default.aspx?s=42-2C-21-30-C0-E0-A4-05-63-47-BC-EB-BC-A0-E2-1B" class="btn">AGU iPoster</a>
+              <a href="https://github.com/Actual-Heathen/ALPIP-Dusty-Plasma" class="btn">Code</a>
+            </div>
+          </section>
+          <section id="Projects">
+            <div class="page-header">
+              <h1>Projects</h1>
+            </div>
+          </section>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="hero-unit">
-        <p>Under construction...</p>
-      </div>
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script>
-      _386 = {onePass: false}; 
-    </script> 
   </body>
+  <footer class="footer">
+    <div style="text-align: center;">
+      <a href="https://github.com/kristopolous/BOOTSTRA.386" class="text-center">Get this theme</a>
+    </div>
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script>
+    _386 = {onePass: false}; 
+  </script>
+</html>
