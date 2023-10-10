@@ -1,3 +1,37 @@
+
+input[type="range"] { 
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 72%;
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 0; /* iOS */
+}
+
+::-webkit-slider-runnable-track {
+  background: #bbbbbb;
+}
+
+/*
+* 1. Set to 0 width and remove border for a slider without a thumb
+* 2. Shadow is negative the full width of the input and has a spread 
+*    of the width of the input.
+*/
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 5%; /* 1 */
+  height: 100%;
+  background: #bbbbbb;
+  box-shadow: -200px 0 0 200px #000084; /* 2 */
+  border: 2px solid black; /* 1 */
+}
+
+i.fas.fa-play, i.fas.fa-pause, i.fas.fa-step-forward, i.fas.fa-step-backward {
+  cursor: pointer;
+}
 /*!
  * Bootstrap v2.3.1
  *
@@ -704,7 +738,7 @@ em:after,
 var:after,
 address:after,
 dfn:after {
-  content: '/';
+  content: '';
 }
 
 .muted {
