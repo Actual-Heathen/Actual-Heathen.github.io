@@ -22,6 +22,16 @@ let curr_track = document.createElement('audio');
 // Define the tracks that have to be played
 let track_list = [
     {
+        name: "Rolling Down The Street, In My Katamari",
+        artist: "FearOfDark",
+        path: src="https://files.catbox.moe/z0fq2i.mp3"
+    },
+    {
+        name: "Space Debris",
+        artist: "Captain/Image",
+        path: src="https://files.catbox.moe/ef4v0v.mp3"
+    },
+    {
         name:"lagtrain feat. kaai yuki",
         artist: "inabakumori",
         path:"https://files.catbox.moe/9ywkki.mp3"
