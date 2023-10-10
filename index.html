@@ -12,7 +12,8 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link rel="icon" href="assets/newpfp.png">
     <style>body { visibility: hidden } </style>
-    <script src="js/randConstGif.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
     <noscript>
       <style>
         body { 
@@ -54,6 +55,8 @@
               <li class="nav-header">Updates</li>
               <div>
                 <li class="divider"></li>
+                <li class="text-info">10/10/2023: Added Jukebox</li>
+                <li class="divider"></li>
                 <li class="text-info">10/8/2023: Added about page</li>
                 <li class="divider"></li>
               </div>
@@ -88,7 +91,35 @@
           </div>
         </div>
         <div class="span3">
-          <div id="Updates">
+          <div id="jukebox" style="margin-bottom: 10%;">
+            <div class="nav nav-list">
+              <div class="player">
+                <div class="details">
+                  <div class="now-playing text-info">PLAYING x OF y</div>
+                  <div class="track-art"></div>
+                  <marquee scrollamount="8" class="track-name text-info"></marquee>
+                  <div style="margin: 5% auto; text-align: center;" class="track-artist text-info">Track Artist</div>
+                </div>
+                <div style="margin: auto;">
+                  <div style="display: inline; margin-right: 34%;" class="prev-track text-info" onclick="prevTrack()"><i class="fas fa-step-backward"></i></div>
+                  <div style="display: inline;" class="playpause-track text-info" onclick="playpauseTrack()"><i class="fas fa-play"></i></div>
+                  <div style="display: inline; margin-left: 34%;" class="next-track text-info" onclick="nextTrack()"><i class="fas fa-step-forward"></i></div>
+                </div>,
+                <div  style="margin: auto;" class="slider_container text-info">
+                  <p style="display: inline;" class="current-time">00:00</p>
+                  <input style="width: 43%; margin: 10% 0;" type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                  <p style="display: inline;" class="total-duration">00:00</p>
+                </div>
+                <div style="margin: auto;" class="slider_container text-info">
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="1" max="100" value="100" class="volume_slider" onchange="setVolume()">
+                  <i class="fa fa-volume-up"></i>
+                </div>
+                <style src="css/jukebox.css"></style>
+              </div>
+            </div>
+          </div>
+          <div id="Buttons">
             <ul style="overflow: auto;" class="nav nav-list">
               <li class="nav-header">Buttons</li>
               <div>
@@ -118,6 +149,7 @@
     </div>
   </footer>
   <script src="js/jquery.js"></script>
+  <script src="js/randConstGif.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
   <script>
     _386 = {onePass: false}; 
