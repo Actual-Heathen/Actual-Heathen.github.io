@@ -31,26 +31,6 @@ let track_list = [
         artist: "Captain/Image",
         path: src="https://files.catbox.moe/ef4v0v.mp3"
     },
-    {
-        name:"lagtrain feat. kaai yuki",
-        artist: "inabakumori",
-        path:"https://files.catbox.moe/9ywkki.mp3"
-    },
-    {
-        name:"kimi ni kaikisen feat. kaai yuki",
-        artist: "inabakumori",
-        path:"https://files.catbox.moe/1pxdnw.mp3"
-    },
-    {
-        name:"god-ish feat. hatsune miku",
-        artist: "pinocchio-p",
-        path:"https://files.catbox.moe/xv3vdj.mp3"
-    },
-    {
-        name: "her boyfriend, jude feat. hatsune miku",
-        artist: "syudou",
-        path: "https://files.catbox.moe/49iuxl.mp3",
-    },
 ];
 
 function loadTrack(track_index) {
